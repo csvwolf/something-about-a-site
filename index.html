@@ -4,14 +4,22 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>建站，我们做些什么</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
-
+		<link rel="stylesheet" href="css/theme/solarized.css">
+		<link rel="stylesheet" href="css/style.css">
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<style>
+			section {
+				text-align: left !important;
+			}
 
+			h1, h2 {
+				text-align: center;
+			}
+		</style>
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -24,8 +32,161 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+					<script type="text/template">
+						# 建站
+						## 我们做些什么
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## About Me
+						张(ao)蓓(tian)楚(yu)，来自上海嘉定，普通大学的一名普通大学生——喜欢读书看番写文的弱鸡萌新。
+
+						GitHub: <https://github.com/csvwolf>
+
+						Blog:
+						- Life: <http://xsky.me>
+						- Code: <http://codesky.me>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 接下来主要讲什么
+						唠嗑……萌新瑟瑟发抖中。
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 十年，网站发生了什么
+
+						- 论坛
+						- 博客
+						- 自媒体
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 从零开始建博客
+						### 为什么建博客
+						- 靠谱
+						- 敏感词
+						- 简单易用
+						- 可定制性强
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 从零开始建博客
+						###选定主题
+						- 最想写的
+						- 热门
+						- 擦边球
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 从零开始建博客
+						### 挑选域名
+						- 避免肉眼无法分辨的字母和数字
+						- 短点总没错
+						- 与博客名结合
+						- 根据受众选择域名后缀
+						- 要看续费价格
+							- Godaddy
+							- Namecheap
+							- namesilo
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 从零开始建博客
+						### 虚拟主机 VS VPS
+						#### VPS
+						- 高定制性
+						- 国内知名品牌
+						- 语言任你挑
+
+						#### 虚拟主机
+						- 便宜
+						- 专注内容
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 从零开始建博客
+						### Apache还是Nginx
+						Nginx：异步轮询。Apache：多线程模型。
+
+						但是在比较时，Apache其实在和php-fpm对比，所以……
+
+						以下是来自Hostker的性能对比：
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						对比使用的配置是单核 768M 内存 512M Swap 的虚拟机，测试使用的是 phpinfo() 函数返回的结果有 80 KB 长度，这一函数在运行过程中会扫描 PHP 的所有环境配置项，因此能比较直观的看出初始化和进程通讯所产生的性能影响。
+
+						PHP 版本是 7.0.8，Apache 和 Nginx 版本在截图中。进程配置（Apache 和 php-fpm）是统一初始化 15 个进程，最大限制 100 个进程。
+
+						使用测试工具是 ab，发起 100 并发，总计 1000 次请求。
+
+						Apache + mod_php 测试结果是每秒完成 412 次请求。
+
+						Nginx + php-fpm 测试结果是每秒完成 352 次请求。FastCGI 的进程间通讯还是拉低了性能。
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 从零开始建博客
+						### 保证服务器安全
+						1. 权限最小化，能不用root就不用root
+						2. 开启iptables
+						3. 只允许证书登录
+						4. 开启快照服务
+						5. 不运行可能导致安全问题的程序
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 从零开始建博客
+						### 题外话
+						更愉快的使用：Mosh
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 从零开始建博客
+						### 博客程序
+						- 现成还是自己开发
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 从零开始建博客
+						### 运营
+						- 内容为王，外链为皇
+						- PageRank
+						- 病毒式推广
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 从零开始建博客
+						### 持之以恒的更新
+						- 一个好习惯
+						- 坚持做自己
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Reference
+						[对比 PHP 各种运行模式](https://www.90.cx/php-mode/)
+
+						[PageRank简单版Java实现](http://www.strikezero.xyz/algorithm/6.html)
+
+					</script>
+				</section>
 			</div>
 		</div>
 
